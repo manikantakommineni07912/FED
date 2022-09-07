@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>
+            Event Bubbling
+        </title>
+        <script>
+            var a =document.querySelector('#d');
+            var c=document.querySelector('#e');
+            d.addEventListner('click',function(){
+                console.log('Clicked by d');
+            })
+            d.addEventListner('click',function(){
+                console.log("Clicked by e");
+            })
+        </script>
+    </head>
+    <body>
+        <div id="#d">
+            <button id="#e" value="click here" onclick="Event.stopPropagation()">click here</button>
+        </div>
+    </body>
+</html>
